@@ -32,7 +32,7 @@ $('#currentDay').text(currentDate);
 var currentHour=moment().format('ha');
 console.log(currentHour);
 
-setColors('3pm');
+setColors(currentHour);
 setText();
 var saveButton=document.querySelectorAll('.saveBtn');
 saveButton.forEach(button =>button.addEventListener('click',()=>{
